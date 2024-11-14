@@ -1,0 +1,36 @@
+{% extends 'tasks/base.html' %}
+{% load static %}
+
+{% block title %}
+<title>FocusFlow - Connect with Pawankumar Gaikwad</title>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid contact-background d-flex align-items-center">
+  <!-- Outer Glow Card -->
+  <div class="card contact-card mx-auto text-center shadow-lg">
+    <div class="card-body p-5">
+
+      <!-- Animated Glow Avatar -->
+      <div class="glow-avatar mx-auto mb-4">
+        <img src="{% static 'pfp.png' %}" alt="Profile Picture" class="profile-picture">
+      </div>
+
+      <!-- Name and Subtext -->
+      <h2 class="display-4 text-glow mb-3">Pawankumar Gaikwad</h2>
+      <p class="lead text-muted">Passionate Developer | Innovator</p>
+
+      <!-- Animated Neon Buttons -->
+      <div class="mt-4">
+        <a href="mailto:Pawankumar.infstud@gmail.com" class="neon-button mb-3" target="_blank">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/pawankumar-gaikwad-423019193/" class="neon-button" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
